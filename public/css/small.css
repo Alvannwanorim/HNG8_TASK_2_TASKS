@@ -321,6 +321,10 @@ a:hover {
   padding: 0 0 1rem 0;
 }
 .service-icon {
+  display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
   color: var(--tertiary-color);
   font-size: 1.5rem;
   font-weight: bold;
