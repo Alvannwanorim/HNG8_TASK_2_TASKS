@@ -352,11 +352,82 @@ a:hover {
   color: var(--tertiary-color);
   font-size: 2rem;
 }
+
+.experinces h2 {
+  color: var(--tertiary-color);
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+}
+
+.experience {
+  padding: 1rem;
+  background-color: var(--seconadry-color);
+}
+
+.workplace {
+  display: flex;
+  flex-direction: row;
+}
+
+.workplace img {
+  width: 100px;
+  height: auto;
+}
+
+.worktitle {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.skills h2 {
+  font-size: 1.02rem;
+}
+
+.worktitle h3 {
+  color: var(--text-color);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.worktitle h5 {
+  color: var(--text-color);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.02rem;
+}
+
+.workdesc {
+  padding: 1rem 0 1rem 0;
+}
+
+.workdesc h6 {
+  color: var(--text-color);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.workdesc ul {
+  color: var(--text-color);
+  font-style: normal;
+  font-size: 1.1rem;
+}
+.workdesc ul li {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-heading {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 /* 
-
-
-
-
 nav ul.open {
   display: block;
 }

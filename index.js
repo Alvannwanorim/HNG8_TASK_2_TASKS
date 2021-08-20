@@ -24,7 +24,6 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  console.log(req.body);
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -43,11 +42,10 @@ app.post("/", (req, res) => {
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       console.log(err);
-      return res.render("index", err);
     }
-    console.log("Email sent:" + info.response);
-    res.render("sent");
+    console.log("Email sent:");
   });
+  res.render("sent");
 });
 
 const port = process.env.PORT || 8000;
