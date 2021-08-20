@@ -1,9 +1,9 @@
-function printMyDetails(name, surname) {
-  if (!name | !surname) {
+function printMyDetails(name) {
+  if (!name) {
     console.log("In complete details ");
+  } else {
+    console.log(name);
   }
-
-  console.log(name, surname);
 }
 
-printMyDetails("alvan", "Nwanorim");
+printMyDetails("alvan");

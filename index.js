@@ -24,28 +24,35 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
+  console.log(req.body);
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "alvanwanorim@gmail.com",
+      user: "alvannwanorim@gmail.com",
       pass: "alvan2327",
+    },
+    tls: {
+      rejectUnauthorized: false,
     },
   });
 
+  //Mail options
   const mailOptions = {
     from: req.body.email,
-    to: "alvanwanorim@gmail.com",
+    to: "alvannwanorim@gmail.com",
     subject: `Message from ${req.body.email}: ${req.body.subject}`,
     text: req.body.message,
   };
 
+  //send mail your host
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       console.log(err);
+      res.render("index");
     }
-    console.log("Email sent:");
+    console.log("Email sent:", info.response);
+    res.render("sent");
   });
-  res.render("sent");
 });
 
 const port = process.env.PORT || 8000;
