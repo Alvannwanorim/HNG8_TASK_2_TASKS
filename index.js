@@ -48,11 +48,10 @@ app.post("/", (req, res) => {
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       console.log(err);
-      res.render("index");
     }
     console.log("Email sent:", info.response);
-    res.render("sent");
   });
+  res.render("sent");
 });
 
 const port = process.env.PORT || 8000;
