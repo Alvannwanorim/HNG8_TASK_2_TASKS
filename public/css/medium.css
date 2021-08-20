@@ -1,0 +1,74 @@
+@media only screen and (min-width: 768px) {
+  header h1 {
+    font-size: 2.85rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+  header img {
+    height: 100px;
+  }
+
+  .medium-6 {
+    width: 50%;
+  }
+  .medium-4 {
+    width: 33.3333%;
+  }
+  nav button {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: end;
+  }
+  .navbar ul li {
+    display: inline-block;
+    font: 1.05rem;
+  }
+
+  .title h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-style: normal;
+  }
+
+  .subtitle h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-style: normal;
+  }
+
+  .availiable h3 {
+    font-size: 1.8rem;
+  }
+  .contact {
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    width: 35%;
+    border: solid 1px var(--tertiary-color);
+    border-radius: 200px;
+  }
+
+  .contact a:hover {
+    background-color: var(--tertiary-color);
+    border: none;
+  }
+  /* 
+  nav ul {
+    display: block;
+  }
+  nav li {
+    width: 25%;
+    float: left;
+  } */
+} /* end of media query */

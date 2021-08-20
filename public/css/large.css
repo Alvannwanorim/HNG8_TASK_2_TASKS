@@ -1,0 +1,18 @@
+@media only screen and (min-width: 1140px) {
+  .large-3 {
+    width: 25%;
+  }
+  .large-4 {
+    width: 33.3333%;
+  }
+
+  /* nav ul {
+    margin-left: 2vw;
+  }
+  nav li {
+    width: auto;
+  }
+  nav a {
+    padding: 0.7rem 1rem;
+  } */
+} /* end of media query */
